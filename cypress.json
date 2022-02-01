@@ -5,7 +5,7 @@
     "reporterOptions": {
         "reportDir": "cypress/reports",
         "charts": true,
-        "reportPageTitle": "My Test Suite",
+        "reportPageTitle": "Pepperfry Test",
         "embeddedScreenshots": true,
         "inlineAssets": true
     },
