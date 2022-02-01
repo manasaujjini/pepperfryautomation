@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-describe("My first project", function () {
+describe("radio button scenario", function () {
     let lowestPriceArray = [];
-    it("My project", function () {
+    it("to fetch lowest price", function () {
 
         cy.visit('https://www.pepperfry.com/')
         cy.get('#search').should('be.visible').type('study table')

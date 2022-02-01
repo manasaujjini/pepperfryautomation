@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("My first project", function () {
+describe("kart scenario", function () {
 
     before(function () {
         cy.fixture('example').then(function (example) {
@@ -8,7 +8,7 @@ describe("My first project", function () {
         })
     })
 
-    it("My project", function () {
+    it("to add 2 iteams into the kart", function () {
 
         cy.visit('https://www.pepperfry.com/')
         cy.get('#search').should('be.visible').type('study table')

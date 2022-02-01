@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-describe("My first project", function () {
-    it("My project", function () {
+describe("registration scenario", function () {
+    it("to get error message", function () {
 
 
         cy.visit('https://www.pepperfry.com/')

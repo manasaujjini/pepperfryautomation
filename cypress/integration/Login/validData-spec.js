@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-describe("My first test", function () {
+describe("login scenario", function () {
 
     before(function () {
         cy.fixture('example').then(function (example) {
@@ -7,7 +7,7 @@ describe("My first test", function () {
         })
     })
 
-    it("My first test", function () {
+    it("to login", function () {
 
         cy.visit('https://www.pepperfry.com/')
         cy.get('.hd-profile-cta-wrap > .hd-icon-cta').should('be.visible').invoke('show')
