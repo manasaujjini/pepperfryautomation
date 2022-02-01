@@ -1,4 +1,8 @@
 /// <reference types="cypress" />
+
+module.exports = (on, config) => {
+  require('cypress-mochawesome-reporter/plugin')(on);
+};
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
 //
