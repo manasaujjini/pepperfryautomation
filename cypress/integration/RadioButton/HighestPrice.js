@@ -9,7 +9,7 @@ describe("My first project", function () {
         cy.get('#searchButton').click()
         cy.get('label[for="price-desc"]').click()
         cy.wait(5000);
-        // cy.intercept("GET", "/site_product/search?q=study%20table&as=0&src=study%20table&forder=&order=price&dir=desc&p=1").as("highestPrice")
+        cy.intercept("GET", "/site_product/search?q=study%20table&as=0&src=study%20table&forder=&order=price&dir=desc&p=1").as("highestPrice")
         // cy.wait("@highestPrice", { timeout: 45000 });
         cy.get('.clipCard__price-offer').each($elem => {
             highestPriceArray.push($elem.text())
