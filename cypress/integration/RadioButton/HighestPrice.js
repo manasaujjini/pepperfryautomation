@@ -2,7 +2,7 @@
 
 describe("radio button scenario", function () {
     let highestPriceArray = [];
-    it("to fetch hieghest price", function () {
+    it("should fetch hieghest price", function () {
 
         cy.visit('https://www.pepperfry.com/')
         cy.get('#search').should('be.visible').type('study table')

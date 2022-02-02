@@ -7,7 +7,7 @@ describe("registration scenario", function () {
         })
     })
 
-    it("to get registration", function () {
+    it("should get register", function () {
 
         cy.visit('https://www.pepperfry.com/')
         cy.get('.hd-profile-cta-wrap > .hd-icon-cta').should('be.visible').invoke('show')

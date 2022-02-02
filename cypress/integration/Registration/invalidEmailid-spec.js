@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 describe("registration scenario", function () {
-    it("to get error message", function () {
+    it("should get error message for invalid emailid", function () {
 
 
         cy.visit('https://www.pepperfry.com/')

@@ -7,7 +7,7 @@ describe("login scenario", function () {
         })
     })
 
-    it("to login", function () {
+    it("should login and redirect to homepage", function () {
 
         cy.visit('https://www.pepperfry.com/')
         cy.get('.hd-profile-cta-wrap > .hd-icon-cta').should('be.visible').invoke('show')

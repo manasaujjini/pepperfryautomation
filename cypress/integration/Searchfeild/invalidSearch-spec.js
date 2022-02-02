@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 describe("search scenario", function () {
-    it("to get error message", function () {
+    it("should get error message for invalid search", function () {
 
         cy.visit('https://www.pepperfry.com/')
         cy.get('#search').should('be.visible').type('1234')

@@ -8,7 +8,7 @@ describe("kart scenario", function () {
         })
     })
 
-    it("to add 2 iteams into the kart", function () {
+    it("should add 2 iteams into the kart", function () {
 
         cy.visit('https://www.pepperfry.com/')
         cy.get('#search').should('be.visible').type('study table')

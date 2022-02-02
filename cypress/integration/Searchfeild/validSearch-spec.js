@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 describe("search scenario", function () {
-    it("to get searched item", function () {
+    it("should get searched item", function () {
 
         cy.visit('https://www.pepperfry.com/')
         cy.get('#search').should('be.visible').type('study table')

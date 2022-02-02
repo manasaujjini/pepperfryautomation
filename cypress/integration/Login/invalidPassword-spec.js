@@ -7,7 +7,7 @@ describe("login scenario", function () {
         })
     })
 
-    it("to get error message", function () {
+    it("should get error message for invalid password", function () {
 
         cy.visit('https://www.pepperfry.com/')
         cy.get('.hd-profile-cta-wrap > .hd-icon-cta').should('be.visible').invoke('show')
